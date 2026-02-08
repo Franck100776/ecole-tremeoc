@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>École Municipale de Tréméoc - Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="el-custom-site">
+
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out py-6 md:py-8">
+        <div id="header-container" class="mx-auto max-w-[1400px] px-4 md:px-6 transition-all duration-500 md:px-12">
+          <div id="header-inner" class="relative flex items-center justify-between px-6 py-3 md:py-4 rounded-full transition-all duration-500 border bg-transparent border-transparent">
+            <a href="/" class="flex items-center gap-3 group z-50 no-underline">
+              <div class="w-10 h-10 flex items-center justify-center bg-midnight text-cream rounded-xl rotate-3 group-hover:rotate-0 transition-transform duration-300">
+                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M12 21V10"/><path d="M12 10C12 10 7 10 5 8C3 6 3 3 3 3"/><path d="M12 10C12 10 17 10 19 8C21 6 21 3 21 3"/><circle cx="12" cy="4" r="2" fill="white"/></svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-serif text-xl font-bold text-midnight">Tréméoc<span class="text-clay">.</span></span>
+                <span class="font-heading text-[10px] uppercase tracking-widest text-slate/80">École Publique</span>
+              </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-1">
+                <a href="#services" class="relative px-5 py-2 text-sm font-heading font-medium text-slate hover:text-midnight transition-colors group no-underline">L'École</a>
+                <a href="#project" class="relative px-5 py-2 text-sm font-heading font-medium text-slate hover:text-midnight transition-colors group no-underline">Projet</a>
+                <a href="#contact" class="relative px-5 py-2 text-sm font-heading font-medium text-slate hover:text-midnight transition-colors group no-underline">Infos</a>
+            </nav>
+            <div class="flex items-center gap-4">
+              <a href="#contact" class="no-underline hidden md:flex items-center gap-2 px-6 py-2.5 rounded-full font-heading text-xs font-bold uppercase tracking-wider transition-all duration-300 border bg-white/50 backdrop-blur-sm text-midnight border-midnight/10 hover:bg-midnight hover:text-white" id="header-cta">
+                <span>Portail Famille</span>
+              </a>
+              <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full bg-surface text-midnight border-none cursor-pointer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h16M4 16h16"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-midnight transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] -translate-y-full flex flex-col p-6">
+         <div class="relative h-full flex flex-col">
+            <div class="flex justify-between items-center mb-12">
+               <span class="font-serif text-2xl font-bold text-white">Tréméoc<span class="text-clay">.</span></span>
+               <button id="close-menu-btn" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white border-none cursor-pointer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+               </button>
+            </div>
+            <nav class="flex-1 flex flex-col justify-center space-y-4">
+                <a href="#services" class="mobile-link text-4xl font-serif text-white/50 hover:text-white no-underline">L'École</a>
+                <a href="#project" class="mobile-link text-4xl font-serif text-white/50 hover:text-white no-underline">Projet</a>
+                <a href="#contact" class="mobile-link text-4xl font-serif text-white/50 hover:text-white no-underline">Infos</a>
+            </nav>
+         </div>
+    </div>
+
+    <section class="relative w-full min-h-[90vh] flex items-center overflow-hidden bg-cream">
+        <div class="absolute inset-0 w-full h-full">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop" class="w-full h-full object-cover" alt="Héros">
+            <div class="absolute inset-0 bg-gradient-to-r from-cream via-cream/95 to-transparent"></div>
+        </div>
+        <div class="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10 pt-20">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm mb-8 animate-fade-up">
+                    <span class="w-2 h-2 rounded-full bg-clay animate-pulse"></span>
+                    <span class="text-sm font-heading font-medium text-slate uppercase">École Publique de Tréméoc</span>
+                </div>
+                <h1 class="font-serif text-display leading-none text-midnight mb-8 animate-fade-up">
+                    Grandir et <span class="italic text-clay">s'épanouir</span> à Tréméoc.
+                </h1>
+                <p class="font-body text-body-lg text-slate mb-10 animate-fade-up">Une école à taille humaine, ancrée dans son territoire.</p>
+                <div class="flex gap-5 animate-fade-up">
+                    <a href="#contact" class="no-underline px-8 py-4 bg-midnight text-white rounded-full font-heading font-semibold">Inscriptions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="w-full py-24 bg-white">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-12">
+            <h2 class="font-serif text-h2 text-midnight mb-16">Un parcours <span class="text-clay">épanouissant</span>.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <article class="md:col-span-2 relative overflow-hidden rounded-[2.5rem] p-10 bg-orange-50 min-h-[320px]">
+                    <h3 class="font-serif text-4xl text-midnight mb-4">Le Cocon des Petits</h3>
+                    <p class="text-slate-700 text-lg max-w-md">Cycle 1 : Petite, Moyenne et Grande Section.</p>
+                </article>
+                <article class="md:row-span-2 bg-sky-50 rounded-[2.5rem] p-10 border border-sky-100">
+                    <h3 class="font-serif text-4xl text-midnight mb-6">L'Aventure du Savoir</h3>
+                    <p class="text-slate-600 mb-8">Du CP au CM2 : Apprentissages et autonomie.</p>
+                </article>
+                <article class="bg-[#F0FDF4] rounded-[2.5rem] p-10 border border-green-100">
+                    <h3 class="font-serif text-2xl mb-3 text-midnight">La Cantine</h3>
+                    <p class="text-slate-600 text-sm">80% de produits frais et locaux.</p>
+                </article>
+                <article class="bg-[#FFF1F2] rounded-[2.5rem] p-10 border border-rose-100">
+                    <h3 class="font-serif text-2xl mb-3 text-midnight">Périscolaire</h3>
+                    <p class="text-slate-600 text-sm">Garderie de 7h30 à 18h30.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full bg-midnight text-cream py-24 px-6 md:px-12">
+        <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between gap-12">
+            <div>
+                <h2 class="font-serif text-6xl mb-8">Tréméoc<span class="text-clay">.</span></h2>
+                <address class="not-italic text-white/60 space-y-2">
+                    <p>Rue des Écoles, 29120 Tréméoc</p>
+                    <p>02 98 87 00 00 | ecole@tremeoc.fr</p>
+                </address>
+            </div>
+            <div class="flex flex-col items-end">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="bg-white/5 border border-white/10 px-8 py-4 rounded-full text-white uppercase text-xs font-bold tracking-widest hover:bg-white hover:text-midnight transition-all">Retour en haut</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

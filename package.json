@@ -1,0 +1,13 @@
+{
+  "name": "ecole-tremeoc-static",
+  "version": "1.1.0",
+  "description": "Site statique complet pour l'École de Tréméoc",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css",
+    "verify": "grep -qvE 'cdn.tailwindcss.com|importmap|esm.sh|unpkg|skypack' *.html assets/js/*.js || (echo 'ERREUR: Dépendances externes interdites détectées' && exit 1)"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
